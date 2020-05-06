@@ -30,6 +30,10 @@ body{
     padding: 0;
 }
 
+div{
+    display: inline;
+}
+
 /*Header section styles*/
 #home{
     background-color: #38E5C8;
@@ -90,5 +94,28 @@ header nav a button{
 }
 
 /*Project section styles*/
+
+#projects{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1%;
+}
+
+#projects img{
+    width: 80%;
+    height: 80%;
+}
+
+.row1, .row2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.col{
+    text-align: center;
+}
+
+
+
 
 /*Footer section styles*/
