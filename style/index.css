@@ -26,9 +26,32 @@ vertical-align: baseline;
 
 /*General styles*/
 body{
-    
+    margin: 0;
+    padding: 0;
 }
 
 /*Header section styles*/
+#home{
+    margin: 0 0 5% 0;
+    background-color: #38E5C8;
+    padding: 5%;
+    
+}
+
+header h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #532491;
+    margin: 0 5%;
+}
+
+header nav{
+    margin: 0 10%;
+}
+
+header nav a button{
+    margin: -5px;
+    padding: 0.5% 2%;
+}
 
 /**/
