@@ -34,6 +34,13 @@ div{
     display: inline;
 }
 
+h2{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: #532491;
+    font-weight: bolder;
+}
+
 /*Header section styles*/
 #home{
     background-color: #38E5C8;
@@ -67,6 +74,11 @@ header nav a button{
     margin: 1%;
 }
 
+#about button{
+    font-size: 15px;
+    padding: 0.5% 3%;
+}
+
 .intro{
     display: flex;
     flex-direction: column;
@@ -78,8 +90,6 @@ header nav a button{
 
 .intro h2{
     padding: 5%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
 }
 
 .intro a{
@@ -102,8 +112,8 @@ header nav a button{
 }
 
 #projects img{
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 70%;
 }
 
 .row1, .row2{
@@ -115,7 +125,29 @@ header nav a button{
     text-align: center;
 }
 
-
-
-
 /*Footer section styles*/
+#contact{
+    text-align: center;
+    background-color: #38E5C8;
+    padding: 5% 0 0 0;
+}
+
+#contact img{
+    width: 3%;
+    height: 3%;
+    margin: 1% 0;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom h2{
+    padding: 1%;
+}
+
+.bottom button{
+    font-size: 15px;
+    padding: 0.5% 3%;
+}
