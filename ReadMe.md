@@ -51,6 +51,7 @@ The following goals are designed to stretch your knowledge and may require addit
 - [ ] Add CSS animations
 - [ ] Design and execute your own wireframe for `About`, `Projects`, and `Contact` pages
 - [ ] Host your website on Netlify.com
+    * https://jessicaportfolio.netlify.app/
 
 ## FAQs
 
