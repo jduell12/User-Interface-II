@@ -155,15 +155,16 @@ header nav a button{
 }
 
 #contact img{
-    width: 3%;
-    height: 3%;
-    margin: 1% 0;
+    width: 4%;
+    height: 4%;
+    margin: 1% 1%;
+    padding: 0.5%;
+    border-bottom: 0.1rem solid #FFBC50;
 }
 
 #contact img:hover{
     transform: scale(1.5);
     border: none;
-    border-radius: 0;
     margin: 1%;
 }
 
@@ -180,4 +181,29 @@ header nav a button{
 .bottom button{
     font-size: 1.5rem;
     padding: 0.5% 3%;
+}
+
+/*Change style when width is 800px or lower*/
+@media(max-width: 800px){
+    /*general styles*/
+    button:hover{
+        background-color: #532491;
+        color: #FFBC50;
+        transform: none;
+        margin: 0;
+    }
+
+    button{
+        background-color: #532491;
+        color: #FFBC50;
+        margin: 5%;
+        padding: 5%;
+        border: none;
+    }
+
+    img:hover{
+        border: none;
+        border-radius: 0%;
+    }
+
 }
