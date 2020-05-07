@@ -207,3 +207,39 @@ header nav a button{
     }
 
 }
+
+/*Change style when width is 500px or lower*/
+@media(max-width: 500px){
+    /*general styles*/
+    img{
+        border-radius: 30%;
+    }
+    /*about section styles*/
+    #about{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #about h2{
+        padding-bottom: 0;
+    }
+    
+    #about .intro{
+        display: flex;
+        align-items: center;
+    }
+
+    #about .intro a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: none;
+        padding: 0;
+    }
+
+    #about .intro a button{
+        margin: 0;
+        margin-bottom: 2%;
+    }
+}
