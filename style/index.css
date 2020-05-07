@@ -69,6 +69,18 @@ img:hover{
     
 }
 
+.hidden{
+    border: 0;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip; rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
 header h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 4rem;
@@ -250,4 +262,42 @@ header nav a button{
         height: 7%;
         border-radius: 0;
     }
+}
+
+/*Change style when width is 400px or lower*/
+@media(max-width: 400px){
+    /*general styles*/
+    img:hover{
+        border-radius: 30%;
+    }
+
+    /*header section styles*/
+    header{
+        display: flex;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: column;
+        order: -1;
+        justify-content: space-evenly;
+    }
+
+    header nav a{
+        margin: 1%;
+    }
+
+    header nav a button{
+        font-size: 1.5rem;
+    }
+
+    /*projects section styles*/
+    .row1, .row2{
+        flex-wrap: wrap;
+    }
+    
+    .col{
+        width: 50%;
+    }
+
 }
