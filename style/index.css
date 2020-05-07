@@ -32,6 +32,7 @@ html{
 body{
     margin: 0;
     padding: 0;
+    background: #F8F8FF;
 }
 
 div{
@@ -241,5 +242,12 @@ header nav a button{
     #about .intro a button{
         margin: 0;
         margin-bottom: 2%;
+    }
+
+    /*contact section styles*/
+    #contact img{
+        width: 7%;
+        height: 7%;
+        border-radius: 0;
     }
 }
