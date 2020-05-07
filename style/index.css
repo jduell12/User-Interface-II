@@ -42,8 +42,8 @@ h2{
 }
 
 button:hover{
-    background-color: grey;
-    color: #38E5C8;
+    background-color: #FFBC50;
+    color: #532491;
     transform: scale(1.5);
     margin: 1.5%;
 }
@@ -55,7 +55,7 @@ img:hover{
 
 /*Header section styles*/
 #home{
-    background-color: #38E5C8;
+    background-color: #532491;
     padding: 5%;
     
 }
@@ -63,7 +63,7 @@ img:hover{
 header h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
-    color: #532491;
+    color: #FFBC50;
     margin: 0 5%;
 }
 
@@ -142,7 +142,7 @@ header nav a button{
 /*Footer section styles*/
 #contact{
     text-align: center;
-    background-color: #38E5C8;
+    background-color: #532491;
     padding: 5% 0 0 0;
 }
 
@@ -166,6 +166,7 @@ header nav a button{
 
 .bottom h2{
     padding: 1%;
+    color: #FFBC50;
 }
 
 .bottom button{
