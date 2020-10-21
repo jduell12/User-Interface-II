@@ -25,9 +25,14 @@ vertical-align: baseline;
 }
 
 /*General styles*/
+html{
+    font-size: 62.5%;
+}
+
 body{
     margin: 0;
     padding: 0;
+    background: #F8F8FF;
 }
 
 div{
@@ -35,10 +40,14 @@ div{
 }
 
 h2{
-    font-size: 24px;
+    font-size: 2.4rem;
     font-family: 'Montserrat', sans-serif;
     color: #532491;
     font-weight: bolder;
+}
+
+h3{
+    font-size: 1.5rem;
 }
 
 button:hover{
@@ -49,7 +58,7 @@ button:hover{
 }
 
 img:hover{
-    border: 5px solid #532491;
+    border: 0.5rem solid #532491;
     border-radius: 50%;
 }
 
@@ -60,9 +69,21 @@ img:hover{
     
 }
 
+.hidden{
+    border: 0;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip; rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
 header h1{
     font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
+    font-size: 4rem;
     color: #FFBC50;
     margin: 0 5%;
 }
@@ -72,7 +93,7 @@ header nav{
 }
 
 header nav a button{
-    margin: -5px;
+    margin: -0.5rem;
     padding: 0.5% 2%;
 }
 
@@ -89,7 +110,7 @@ header nav a button{
 }
 
 #about button{
-    font-size: 15px;
+    font-size: 1.5rem;
     padding: 0.5% 3%;
 }
 
@@ -113,7 +134,7 @@ header nav a button{
 .intro p{
     margin: 1% 5%;
     font-family: sans-serif;
-    font-size: 15px;
+    font-size: 1.5rem;
     text-indent: 4%;
 }
 
@@ -147,15 +168,16 @@ header nav a button{
 }
 
 #contact img{
-    width: 3%;
-    height: 3%;
-    margin: 1% 0;
+    width: 4%;
+    height: 4%;
+    margin: 1% 1%;
+    padding: 0.5%;
+    border-bottom: 0.1rem solid #FFBC50;
 }
 
 #contact img:hover{
     transform: scale(1.5);
     border: none;
-    border-radius: 0;
     margin: 1%;
 }
 
@@ -170,6 +192,112 @@ header nav a button{
 }
 
 .bottom button{
-    font-size: 15px;
+    font-size: 1.5rem;
     padding: 0.5% 3%;
+}
+
+/*Change style when width is 800px or lower*/
+@media(max-width: 800px){
+    /*general styles*/
+    button:hover{
+        background-color: #532491;
+        color: #FFBC50;
+        transform: none;
+        margin: 0;
+    }
+
+    button{
+        background-color: #532491;
+        color: #FFBC50;
+        margin: 5%;
+        padding: 5%;
+        border: none;
+    }
+
+    img:hover{
+        border: none;
+        border-radius: 0%;
+    }
+
+}
+
+/*Change style when width is 500px or lower*/
+@media(max-width: 500px){
+    /*general styles*/
+    img{
+        border-radius: 30%;
+    }
+    /*about section styles*/
+    #about{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #about h2{
+        padding-bottom: 0;
+    }
+    
+    #about .intro{
+        display: flex;
+        align-items: center;
+    }
+
+    #about .intro a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: none;
+        padding: 0;
+    }
+
+    #about .intro a button{
+        margin: 0;
+        margin-bottom: 2%;
+    }
+
+    /*contact section styles*/
+    #contact img{
+        width: 7%;
+        height: 7%;
+        border-radius: 0;
+    }
+}
+
+/*Change style when width is 400px or lower*/
+@media(max-width: 400px){
+    /*general styles*/
+    img:hover{
+        border-radius: 30%;
+    }
+
+    /*header section styles*/
+    header{
+        display: flex;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: column;
+        order: -1;
+        justify-content: space-evenly;
+    }
+
+    header nav a{
+        margin: 1%;
+    }
+
+    header nav a button{
+        font-size: 1.5rem;
+    }
+
+    /*projects section styles*/
+    .row1, .row2{
+        flex-wrap: wrap;
+    }
+    
+    .col{
+        width: 50%;
+    }
+
 }
